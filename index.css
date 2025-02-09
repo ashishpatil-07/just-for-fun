@@ -1,0 +1,77 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+	background-size: 400% 400%;
+	animation: gradientBG 10s ease infinite;
+	padding-top: 50px; /* Adjust the top padding as needed */
+  }
+  
+  @keyframes gradientBG {
+	0% { background-position: 0% 50%; }
+	50% { background-position: 100% 50%; }
+	100% { background-position: 0% 50%; }
+  }
+  
+  h1 {
+	text-align: center;
+	font-size: 36px;
+	color: #fff;
+	margin-bottom: 30px;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  #login-form {
+	background: rgba(255, 255, 255, 0.9);
+	padding: 20px 30px;
+	border-radius: 15px;
+	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+	text-align: center;
+  }
+  
+  #login-form label {
+	display: block;
+	font-size: 18px;
+	color: #333;
+	margin-bottom: 10px;
+  }
+  
+  #login-form input {
+	padding: 10px;
+	width: 100%;
+	max-width: 300px;
+	border: 2px solid #ff9a9e;
+	border-radius: 8px;
+	margin-bottom: 15px;
+  }
+  
+  #submit-btn {
+	background: #ff6f61;
+	color: white;
+	padding: 12px 25px;
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
+	font-size: 16px;
+	transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  #submit-btn:hover {
+	background: #ff3b2e;
+	transform: scale(1.05);
+  }
+  
+  #result, #loading-spinner {
+	margin-top: 20px;
+  }
+  

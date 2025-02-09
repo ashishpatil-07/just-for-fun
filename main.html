@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Just for Fun</title>
+	<link rel="stylesheet" href="main.css" />
+</head>
+<body>
+	<div class="container">
+		<div
+			class="tenor-gif-embed"
+			data-postid="22885016"
+			data-share-method="host"
+			data-aspect-ratio="1.04918"
+			data-width="100%"
+		>
+			<a href="https://tenor.com/view/manja-gif-22885016">Manja Sticker</a> from
+			<a href="https://tenor.com/search/manja-stickers">Manja Stickers</a>
+		</div>
+		<script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+
+		<!-- Display the user's name here -->
+		<p id="userNameDisplay" style="font-size: 24px; font-weight: bold; color: #ff1493; text-align: center;"></p>
+
+		<!-- Your main heading -->
+		<h1>Do You Love Me💕🤌❓🤗</h1>
+
+		<div class="btn">
+			<a id="yesButton" href="yes.html">Yes</a>
+			<a id="noButton" href="no1.html">No</a>
+		</div>
+
+		<h5>Made by Me for You 🫶</h5>
+	</div>
+
+	<script>
+		// Retrieve the name from localStorage
+		const userInput = localStorage.getItem('userInput');
+
+		// Display the name if it exists
+		if (userInput) {
+			document.getElementById('userNameDisplay').textContent = `Hi ${userInput}! 💖`;
+		} 
+	</script>
+</body>
+</html>
